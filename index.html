@@ -5,79 +5,89 @@
     <title>Game Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <img src="https://placehold.co/130x80" alt="logo-game-shop">
-        <p>Bem vindo(a)</p>
-        <label for="pesquisar">Pesquisar por:</label>
-        <input type="search" id="pesquisar">
-        <i class="bi bi-cart"></i>
-
-        <nav>
-            <ul>
-                <li><a href="">Nintendo</a></li>
-                <li><a href="">Xbox</a></li>
-                <li><a href="">Playstation</a></li>
-                <li><a href="">PC</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div>
-            <img src="https://placehold.co/1000x300" alt="">
+    <header id="cabecalho">
+        <div id="conteudo-topo">
+            <div id="logo">
+             <a href="index.html"><img src="assets/logo.png" id="logo-img" alt="logo-game-shop"></a>
+               
+            </div>
+           
+           <div id="login-e-carrinho">
+            <div class="login">
+                <p class="login"><a href="login.html"> <i class="bi bi-person-fill"></i></a></p>
+            </div>
+            <div id="carrinho">
+                <i class="bi bi-cart-fill"></i>
+            </div>
+           </div>
         </div>
 
-        <div>
-            <label for="ordenacao">Ordenar por:</label>
-            <select name="ordenacao" id="ordenacao">
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="">Nintendo</a></li>
+            <li><a href="">Xbox</a></li>
+            <li><a href="">Playstation</a></li>
+            <li><a href="">PC</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div id="banner">
+            <img src="./assets/banner.png" alt="">
+        </div>
+
+        <div id="div-ordenacao">
+            <label for="ordenacao">Ordenar por: </label>
+            <select name="ordenacao" id="ordernar-por" class="campo-estilizado">
                 <option value="destaque">Destaque</option>
                 <option value="titulo-asc">Título (A - Z)</option>
-                <option value="titulo-desc">Título (Z - A)</option>
+                <option value="titulo-desc">Título (Z - A)</optson>
             </select>
         </div>
 
-        <section>
-            <div>
-                <div>
-                    <img src="https://placehold.co/200x150" alt="">
-                    <h4>Título do jogo</h4>
-                    <p>R$ 00,00</p>
-                    <p>Nome do Console</p>
-                </div>
+        <section id="lista-jogos">
+                   <div class="card-jogo">
+                        <img src="assets/super-mario-wonder.png" alt="Super Mario Wonder">
+                        <h4>Super Mario Wonder</h4>
+                        <p>R$ 299,00</p>
+                        <p>Nintendo Switch</p>
+                   </div>
 
-                <div>
-                    <img src="https://placehold.co/200x150" alt="">
-                    <h4>Título do jogo</h4>
-                    <p>R$ 00,00</p>
-                    <p>Nome do Console</p>
-                </div>
+                   <div class="card-jogo"> 
+                        <img src="assets/god-of-war.png" alt="">
+                        <h4>God of War - Ragnarok</h4>
+                        <p>R$ 219,00</p>
+                        <p>Playstation 5</p>
+                    </div>
 
-                <div>
-                    <img src="https://placehold.co/200x150" alt="">
-                    <h4>Título do jogo</h4>
-                    <p>R$ 00,00</p>
-                    <p>Nome do Console</p>
-                </div>
-            </div>
+                   <div class="card-jogo">
+                    <img src="assets/flight-simulator.png" alt="">
+                    <h4>Microsoft Flight Simulator</h4>
+                    <p>R$ 199,00</p>
+                    <p>X-BOX</p>
+                   </div>
         </section>
     </main>
 
-    <hr >
+    
 
     <footer>
-        <div>
-            <p>Game Shop</p>
-            <span>©2023 Game Shop <br>Todos os direitos reservados</span>
-        
+        <div class="footer-content">
+            <p class="business-name">Game Shop</p>
+            <span class="copyright">©2023 Game Shop <br>Todos os direitos reservados</span>
         </div>
-        
-        <ul>
-            <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
-            <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+
+        <ul class="footer-card">
+            <li><a href="index.html"><i class="bi bi-house"></i>Home</a></li>
+            <li><a href="carrinho.html"><i class="bi bi-cart"></i>Carrinho</a></li>
+            <li><a href="login.html"><i class="bi bi-box-arrow-in-right"></i>Login</a></li>
+            <li><a href="cadastro.html"><i class="bi bi-person-vcard-fill"></i>Cadastro</a></li>
         </ul>
-    </footer>    
+    </footer>  
 </body>
 </html>

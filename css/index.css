@@ -1,0 +1,98 @@
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#banner img{
+    width: 100%;
+}
+
+#div-ordenacao{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    align-items: center;
+}
+
+#lista-jogos {
+  display: flex;
+}
+
+
+.card-jogo{
+    display: block;
+    padding: 1rem;  
+    width: 30%; 
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #2D4859;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.card-jogo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+.card-jogo img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-jogo h4 {
+    margin-top: 1rem;
+}
+
+.card-jogo p{
+    margin-top: .3rem;
+}
+
+
+
+
+@media screen and  (max-width: 667px){
+    body{
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+
+    #categoria-ul {
+        flex-wrap: wrap;
+    }
+
+    #lista-jogos{
+        flex-wrap: wrap;
+    }
+
+    div.card-jogo {
+        width: 100%;
+    }
+
+    #titulo-avaliacao {
+        font-size: 15px;
+    }
+    #avaliacao i{
+        font: 15px;
+    }
+
+    #frase-avaliacao {
+        display: none;
+    }
+
+    .formulario {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}

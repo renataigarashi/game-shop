@@ -1,0 +1,174 @@
+
+
+.item-carrinho {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem
+}
+
+.item-carrinho img {
+    margin-right: 3rem;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.quantidade-produto{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.selecao-midia{ 
+    margin-top: 1.5rem;
+}
+
+.quantidade-produto i{
+    color: var(--cor-da-empresa);
+}
+
+.quantidade-produto i:hover{
+   cursor:pointer
+}
+
+.quantidade-numero{
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(---grey);
+}
+
+.quantidade-texto{
+    margin-right: 10px;
+}
+
+.tipo-midia-input {
+    margin-right: 10px;
+}
+
+.preco {
+    font-size: 1.5rem;
+}
+
+#pagamento {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#pagamento p{
+    margin-bottom: 0.5rem;
+    
+}
+
+
+.bold {
+    font-weight: bold
+}
+
+
+.frete, .cupom {
+    display: flex;
+    align-items: center;
+}
+
+.frete{
+    margin-bottom: 1rem;
+}
+
+.custom-label{
+    width: 40%;
+    margin-right: 1rem;
+
+}
+
+.frete-cupom div input {    
+    margin-bottom: 0;
+}
+
+.btn-frete-cupom{
+    font-size: 0.7rem;
+    width: 80%;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #2D4859;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn-frete:hover {
+    background-color: var(--cor-empresa);
+    color: #fff
+}
+
+.pagamento-total p:nth-child(2){
+    font-size: 1.5rem;
+}
+
+
+@media screen and  (max-width: 667px){
+
+    .info-produto {
+        margin-top: 1rem;
+    }
+
+
+    .selecao-midia {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .selecao-midia label {
+        display: block;
+    }
+
+    .tipo-midia-input {
+        margin-left: 0;
+    }
+    
+    #pagamento{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pagamento-total{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .pagamento-total button {
+        margin: 1rem auto;
+    }
+
+    .item-carrinho {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .item-carrinho img{
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+    #lista-jogos{
+        flex-wrap: wrap;
+    }
+
+    div.card-jogo {
+        width: 100%;
+    }
+
+ 
+    .formulario {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}

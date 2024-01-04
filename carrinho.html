@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
     <title>Game Shop</title>
 </head>
+
 <body>
-    <header>
-        <img src="https://placehold.co/130x80" alt="logo-game-shop">
-        <p>Bem vindo(a)</p>
-        <label for="pesquisar">Pesquisar por:</label>
-        <input type="search" id="pesquisar">
-        <i class="bi bi-cart"></i>
+    <header id="cabecalho">
+        <div id="conteudo-topo">
+            <div id="logo">
+             <a href="index.html"><img src="assets/logo.png" id="logo-img" alt="logo-game-shop"></a>
+               
+            </div>
+           
+           <div id="login-e-carrinho">
+            <div class="login">
+                <p class="login"><a href="login.html"> <i class="bi bi-person-fill"></i></a></p>
+            </div>
+            <div id="carrinho">
+                <i class="bi bi-cart-fill"></i>
+            </div>
+           </div>
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href="">Nintendo</a></li>
-                <li><a href="">Xbox</a></li>
-                <li><a href="">Playstation</a></li>
-                <li><a href="">PC</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="">Nintendo</a></li>
+            <li><a href="">Xbox</a></li>
+            <li><a href="">Playstation</a></li>
+            <li><a href="">PC</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section>
-            <img src="https://placehold.co/400x200" alt=""> 
-            <div>
-                <p>Console</p>
-                <h3>Título do jogo</h3>
-                <div>
+    <main class="container">
+        <section class="item-carrinho">
+            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.462499976158142/c_scale,w_800/ncom/software/switch/70010000068688/1b2766c7a82e706d1465b6e138b1d96d4de7bd7cd7f52831ea149c9afb072250"
+                alt="Super Mario Wonder">
+            <div class="info-produto">
+                <p>Nintendo Switch</p>
+                <h1 class="estilo-h1">Super Mario Bros Wonder</h1>
+                <div class="selecao-midia">
                     <label for="">Selecione um produto:</label>
-                    <input type="radio" name="tipo_midia">Mídia Física
-                    <input type="radio" name="tipo_midia">Mídia Digital
+                    <input type="radio" name="tipo_midia"><span class="tipo-midia-input"> Mídia Física</span>
+                    <input type="radio" name="tipo_midia"><span> Mídia Digital</span>
                 </div>
                 <div>
-                    <p>Quantidade:</p>
-                    <i class="bi bi-dash-square"></i>
-                    <p>1</p>
-                    <i class="bi bi-plus-square"></i>
+                    <div class="quantidade-produto">
+                        <p class="quantidade-texto">Quantidade: </p>
+                        <i class="bi bi-dash-square"></i>
+                        <p class="quantidade-numero">1</p>
+                        <i class="bi bi-plus-square"></i>
+                    </div>
                 </div>
-                <p>R$ 00,00</p>
+                <p class="preco">R$ 299,00</p>
             </div>
         </section>
 
-        <section>
-            <div>
-                <label for="frete">Calcular frete</label>
-                <input type="text" id="frete" placeholder="Insira seu cep">
+        <section id="pagamento">
+            <div class="frete-cupom">
+                <div class="frete">
+                    <label for="frete" class="custom-label">Frete</label>
+                    <input type="number" id="frete" placeholder="Insira seu cep">
+                    <button class="btn-frete-cupom btn-frete">Calcular</button>
+                </div>
+                <div class="cupom">
+                    <label for="cupom" class="custom-label">Cupom</label>
+                    <input type="text" id="cupom">
+                    <button class="btn-frete-cupom btn-cupom">Adicionar cupom</button>
+                </div>
+            </div>
 
-                <label for="cupom">Cupom de desconto</label>
-                <input type="text" id="cupom">
+            <div class="pagamento-total">
+                <p class="valor-frete">Valor do frete: R$ 00,00</p>
+                <p class="preco-total bold">Total: R$ 299,00</p>
+                <p>Pague em até 5 vezes sem juros</p>
+                <button class="btn-padrao">Finalizar compra</button>
             </div>
         </section>
-
-        <section>
-            <p>Total: R$ 00,00</p>
-            <p>Pague em até 5 vezes sem juros</p>
-            <button>Finalizar compra</button>
-        </section>       
     </main>
 
-    <hr >
-
     <footer>
-        <div>
-            <p>Game Shop</p>
-            ©2023 Game Shop <br>Todos os direitos reservados
-        </span>
+        <div class="footer-content">
+            <p class="business-name">Game Shop</p>
+            <span class="copyright">©2023 Game Shop <br>Todos os direitos reservados</span>
         </div>
-        
-        <ul>
-            <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
-            <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+
+        <ul class="footer-card">
+            <li><a href="index.html"><i class="bi bi-house"></i>Home</a></li>
+            <li><a href="carrinho.html"><i class="bi bi-cart"></i>Carrinho</a></li>
+            <li><a href="login.html"><i class="bi bi-box-arrow-in-right"></i>Login</a></li>
+            <li><a href="cadastro.html"><i class="bi bi-person-vcard-fill"></i>Cadastro</a></li>
         </ul>
-    </footer>
-    
+    </footer>  
+    <script src="./script/carrinho-script.js"></script>
 </body>
+
 </html>

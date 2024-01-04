@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #7a7a7a
+}
+
+body {
+    min-height: 100vh;
+    background-color: #cecece;
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+
+:root {
+    --cor-empresa: #3263B0;
+    --grey: #484848;
+}
+
+.estilo-h1 {
+    font-style: bold;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: var(--grey);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#cabecalho {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1rem
+}
+
+#conteudo-topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+}
+
+
+.campo-estilizado {
+    border: 1px ridge var(--cor-empresa);
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.btn-padrao {
+    width: 10rem;
+    padding: 10px;
+    background-color: #2D4859;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn-padrao:hover {
+    background-color: var(--cor-empresa);
+    color: #fff
+}
+
+
+#login-e-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.login {
+    transition: 0.2s ease;
+    margin-right: 2rem;
+}
+
+.login:hover {
+    color: #3263B0;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+.login:hover a {
+    color: var(--cor-empresa);
+}
+
+#carrinho {
+    display: flex;
+}
+
+#carrinho p {
+    margin-right: 1rem;
+}
+
+#login-e-carrinho i.bi-person-fill,
+#login-e-carrinho i.bi-cart-fill  {
+    color: rgb(83, 83, 83);
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+#login-e-carrinho i.bi-person-fill:hover,
+#login-e-carrinho i.bi-cart-fill:hover {
+    color: var(--cor-empresa);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+
+}
+
+#menu {
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    margin-right: 3rem;
+    transition: 0.2s ease
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.2s ease;
+    padding: 1rem;
+}
+
+#menu ul li:hover a {
+    color: #fff;
+    background-color: var(--cor-empresa);
+    transition: 0.2s ease;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* FORMULARIOS */
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    color: var(--grey);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    border: 1px ridge var(--cor-empresa);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.botao-padrao {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-empresa);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    color: var(--grey);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.footer-card {
+    display: flex;
+}
+
+.footer-card li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1.5rem;
+    transition: 0.2s ease;
+
+}
+
+.footer-card li a {
+    text-decoration: none;
+}
+
+.footer-card li:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.footer-card li:hover a {
+    transform: scale(1.1);
+    color: var(--cor-empresa);
+    transition: 0.3s ease;
+}
+
+.footer-card li:hover i {
+    color: var(--cor-empresa);
+}
+
+.footer-card li a i {
+    margin-right: 0.5rem;
+}
+
+.business-name {
+    text-transform: uppercase;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.warning{
+    color: #bf0000 !important
+}
+
+.success {
+    color:#1ea500 !important
+}
+
+.mensagem{
+    margin-top: 1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and  (max-width: 667px){
+    .container {
+        padding: 1rem;
+    }
+
+    #conteudo-topo{
+        display:flex;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    
+    #logo {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-img {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    #login-e-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    
+    }    
+
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+    display: none;
+    }
+
+     ul.footer-card {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #conteudo-topo {
+        padding: 1rem;
+    }
+
+    .campo-estilizado {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+    
+    .login
+
+    .login {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    #menu ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #div-ordenacao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+ 
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+    display: none;
+    }
+
+     ul.footer-card {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+ 
+
+}
