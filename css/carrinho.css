@@ -69,6 +69,11 @@
     font-weight: bold
 }
 
+.frete-cupom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} 
 
 .frete, .cupom {
     display: flex;

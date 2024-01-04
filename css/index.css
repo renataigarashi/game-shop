@@ -17,20 +17,19 @@
 }
 
 #lista-jogos {
-  display: flex;
+    display: flex;
+    align-items: center;
+
 }
 
-
 .card-jogo{
-    display: block;
     padding: 1rem;  
     width: 30%; 
     margin: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 10px #2D4859;
-    justify-content: center;
     align-items: center;
-    width: 25%;
+
     text-align: center;
     transition: 0.2s ease-in-out;
 }
@@ -58,7 +57,7 @@
 
 
 
-@media screen and  (max-width: 667px){
+@media screen and  (max-width: 768px){
     body{
         width: 100%;
     }

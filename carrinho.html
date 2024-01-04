@@ -23,7 +23,7 @@
                 <p class="login"><a href="login.html"> <i class="bi bi-person-fill"></i></a></p>
             </div>
             <div id="carrinho">
-                <i class="bi bi-cart-fill"></i>
+                <a href="carrinho.html"><i class="bi bi-cart-fill"></i></a>
             </div>
            </div>
         </div>
@@ -58,7 +58,7 @@
                         <i class="bi bi-plus-square"></i>
                     </div>
                 </div>
-                <p class="preco">R$ 299,00</p>
+                <p>R$ <span class="preco">299</span>,00</p>
             </div>
         </section>
 
@@ -66,8 +66,9 @@
             <div class="frete-cupom">
                 <div class="frete">
                     <label for="frete" class="custom-label">Frete</label>
-                    <input type="number" id="frete" placeholder="Insira seu cep">
-                    <button class="btn-frete-cupom btn-frete">Calcular</button>
+                    <input type="text" id="frete" placeholder="Insira seu cep">
+                    <button class="btn-frete-cupom btn-frete" onclick="buscaCep()">Calcular</button>
+                    
                 </div>
                 <div class="cupom">
                     <label for="cupom" class="custom-label">Cupom</label>
@@ -77,8 +78,8 @@
             </div>
 
             <div class="pagamento-total">
-                <p class="valor-frete">Valor do frete: R$ 00,00</p>
-                <p class="preco-total bold">Total: R$ 299,00</p>
+                <p class="valor-frete">Valor do frete para <span id="frete-localidade"></span> R$ <span class=preco-frete>00</span>,00</p>
+                <p class="bold">Total: R$ <span class="preco-total">299</span>,00</p>
                 <p>Pague em até 5 vezes sem juros</p>
                 <button class="btn-padrao">Finalizar compra</button>
             </div>

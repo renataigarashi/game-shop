@@ -118,7 +118,7 @@ body {
 }
 
 #login-e-carrinho i.bi-person-fill,
-#login-e-carrinho i.bi-cart-fill  {
+#login-e-carrinho i.bi-cart-fill {
     color: rgb(83, 83, 83);
     font-size: 2rem;
     transition: 0.2s ease-out;
@@ -262,35 +262,33 @@ footer {
     font-size: 12px;
 }
 
-.warning{
+.warning {
     color: #bf0000 !important
 }
 
 .success {
-    color:#1ea500 !important
+    color: #1ea500 !important
 }
 
-.mensagem{
+.mensagem {
     margin-top: 1rem;
 }
 
 
 /* MEDIA QUERIES */
 
-@media screen and  (max-width: 667px){
+@media screen and (max-width: 667px) {
     .container {
         padding: 1rem;
     }
 
-    #conteudo-topo{
-        display:flex;
+    #conteudo-topo {
+        display: flex;
         margin: 0 auto;
         flex-direction: column;
-        align-items: center;
+        align-content: center;
     }
 
-    
-    
     #logo {
         display: flex;
         align-items: center;
@@ -310,8 +308,8 @@ footer {
     .login {
         margin-right: 0;
         margin-bottom: 1rem;
-    
-    }    
+
+    }
 
     #menu ul {
         flex-direction: column;
@@ -324,17 +322,17 @@ footer {
         margin-bottom: 1rem;
     }
 
-    
+
     footer {
         display: flex;
         flex-direction: column;
     }
 
     .footer-content {
-    display: none;
+        display: none;
     }
 
-     ul.footer-card {
+    ul.footer-card {
         flex-wrap: wrap;
         margin: auto;
         justify-content: center;
@@ -359,10 +357,8 @@ footer {
     .formulario {
         width: 90%;
     }
-    
-    .login
 
-    .login {
+    .login .login {
         margin-right: 0;
         margin-bottom: 1rem;
     }
@@ -379,7 +375,7 @@ footer {
         padding: 1rem;
     }
 
- 
+
 
     footer {
         display: flex;
@@ -387,15 +383,15 @@ footer {
     }
 
     .footer-content {
-    display: none;
+        display: none;
     }
 
-     ul.footer-card {
+    ul.footer-card {
         flex-wrap: wrap;
         margin: auto;
         justify-content: center;
     }
 
- 
+
 
 }
