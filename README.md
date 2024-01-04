@@ -1,3 +1,12 @@
-<h1 align=" justify">Game Shop</h1>
+# Game Shop
 
-<p align="justify">Projeto criado para disciplina de Mordern Web do MBA em Desenvolvimento Fullstack da Unyleya</p>
+Projeto criado para disciplina de Modern Web do MBA em Desenvolvimento Fullstack da Unyleya
+<br>
+
+## Tecnologias Utilizadas
+- HTML
+- CSS
+- Javascript
+
+## Outras informações
+Na página de "Carrinho" há integração com a API da [ViaCEP](https://viacep.com.br/ "ViaCEP"), retornando o nome da localização ao adicionar o CEP para consulta de frete.
